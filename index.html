@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to right, rgb(59, 250, 119),rgb(102, 255, 0));
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .main-login{
+            width: 80vw;
+            height: 80vh;
+            background: #201b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: inherit;
+            margin-top: 5%;
+            border-radius: 20px;
+            
+        }
+        .left-login{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Belanosima', sans-serif;
+            
+        }
+        .left-login > h1{
+            color: #77ffc0;
+        }
+        .img{
+            width: 20vw;
+        }
+        .rigth-login{
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .card-login{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            border-radius: 20px;
+            background: #2f2841;
+            box-shadow: 0px 10px 40px #00000056;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .card-login > h1{
+            color: #00ff88;
+            font-weight: 800;
+            margin: 0;
+        }
+        .textfield{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px;
+            font-weight: bold;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .textfield >input{
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background: #514869;
+            color: #f0ffffde;
+            font-size:  12pt;
+            box-shadow: 0px 10px 40px #00000056;
+            outline: none;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            
+        }
+        .textfield >label{
+            color: #f0ffffde;
+            margin-bottom: 5px;
+        }
+        .textfield >input::placeholder{
+            color: #f0ffff94;
+        }
+        .btn-login{
+            width: 100%;
+            padding: 16px 0px;
+            margin: 25px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: large;
+            letter-spacing: 3px;
+            color: #2b134b;
+            background:  #00ff88;
+            cursor: pointer;
+            box-shadow: 0px 10px 40px -12px #00ff8052;
+            font-family: 'poppins', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu login <br>E entre em nosso site</h1>
+            <img src="personal-goals-checklist-animate.svg" class="img" alt="">
+        </div>
+        <div class="rigth-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <div class="textfield">
+                    
+                    <label>Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login"><strong>Login</strong></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
